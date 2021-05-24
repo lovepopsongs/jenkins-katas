@@ -1,2 +1,2 @@
 #! /bin/bash
-gradle --debug clean shadowjar -p ../app
+gradle --stacktrace clean shadowjar -p ../app
