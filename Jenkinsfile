@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
           agent {
             docker {
-              image 'gradle:6.9jdk11'
+              image 'gradle:6.8.3-jdk11'
             }
 
           }
