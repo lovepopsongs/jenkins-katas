@@ -24,5 +24,32 @@ pipeline {
       }
     }
 
+    stage('test') {
+      parallel {
+        stage('test') {
+          agent any
+          environment {
+            aefa = '1'
+          }
+          steps {
+            echo 'aefaef'
+          }
+        }
+
+        stage('') {
+          steps {
+            echo 'hsrhsrh'
+          }
+        }
+
+      }
+    }
+
+    stage('test2') {
+      steps {
+        echo 'aefaefaf'
+      }
+    }
+
   }
 }
